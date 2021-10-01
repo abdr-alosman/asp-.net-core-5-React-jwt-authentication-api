@@ -3,6 +3,8 @@
 <li>Asp .net Core5</li>
 <li>React</li>
 <li>JSON Web Tokens</li>
+ <li>Entity Framework Core</li>
+  <li>Mssql Server</li>
 </ul>
 
 <b> JWT (JSON Web Tokens) Nedir? Ne işe yarar?</b></br>
