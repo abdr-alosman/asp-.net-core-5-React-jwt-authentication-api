@@ -27,3 +27,14 @@ JWT (JSON Web Tokens), IETF kuruluşu tarafından tasarlanan standart bir token 
 <b>JWT’nin yapısı</b>
 JWT, Base64 biçiminde kodlanmış 3 ayrı JSON parçasından oluşmaktadır. Parçalar nokta (.) sembolüyle ayrılmakta ve bir bütün olarak JWT’yi temsil etmektedir.
 
+<b>JOSE Header</b></br>
+JWT başlık bilgisi JSON biçiminde yazılmakta ve standart bazı alanları bulunmaktadır.
+Veri bütünlüğünü korumak için kullanılacak cryptotic algoritmayı belirtir.
+Bir JWT nesnesi olduğunu belirtir .
+
+<b>JWT Payload</b></br>
+Bir JWT token, bir token üretici ve tüketicisi arasında eşsiz olmalıdır. Bu eşsizliği payload diğer adıyla claim bilgileri tanımlar. Payload içinde kullanıcıya ait kimlik, zaman aşımı ve kullanıcı yetkileri gibi alanlar yer alabilir.
+
+<b> JWT Signature (JWT İmzası)</b></br>
+3 parçadan oluşan JWT’nin son parçası JWT imzasıdır. İmza kısmı token üreticisi ve tüketicisi arasındaki veri bütünlüğünü garanti etmektedir. İmza oluşturulurken JOSE başlığında tanımlı algoritma kullanılmaktadır.
+
